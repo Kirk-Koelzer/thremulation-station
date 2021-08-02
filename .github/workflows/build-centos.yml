@@ -28,8 +28,8 @@ jobs:
       - name: Checkout Repository
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         uses: actions/checkout@v2
-        with:
-          ref: actions-centos
+#         with:
+#           ref: actions-centos
 
       - name: Validate packer file syntax
         run: ./packer/packer-validate-centos.sh
